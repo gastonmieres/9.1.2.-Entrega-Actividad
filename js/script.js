@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 const stringElements = strangeArray.filter((element) => typeof element === "string");
 
 // Ordena los elementos de tipo cadena alfabéticamente
-stringElements.sort();
+stringElements.sort((a, b) => a.localeCompare(b));
 
 // Muestra los elementos filtrados y ordenados en la lista (id="list")
 showList(stringElements);
